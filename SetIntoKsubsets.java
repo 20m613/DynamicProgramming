@@ -10,7 +10,7 @@ public class SetIntoKsubsets {
 			return 1;
 		if(n==1 || k==1)
 			return 1;
-			   //Selected!!		why k not n?  //Not Selected!!
+			   //Selected!!		why k not n? because: the kth element can be added to all the subsets formed by taking n-1 element to form k subsets  //Not Selected!!
 		return k*getNumberOfSubsets(n-1, k-1)+getNumberOfSubsets(n-1, k);
 	}
 }
